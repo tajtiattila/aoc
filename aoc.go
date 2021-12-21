@@ -67,19 +67,19 @@ func parsearg(m map[int]struct{}, arg string) bool {
 
 func Log(args ...interface{}) {
 	if Verbose {
-		fmt.Print(args)
+		fmt.Print(args...)
 	}
 }
 
 func Logln(args ...interface{}) {
 	if Verbose {
-		fmt.Println(args)
+		fmt.Println(args...)
 	}
 }
 
 func Logf(format string, args ...interface{}) {
 	if Verbose {
-		fmt.Printf(format, args)
+		fmt.Printf(format, args...)
 	}
 }
 
