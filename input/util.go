@@ -65,6 +65,8 @@ func DayBlocks(day int) *BlockScanner {
 	return NewBlockScanner(Reader(day))
 }
 
+// BlockScanner returns multi-line strings in the input
+// separated by an empty line.
 type BlockScanner struct {
 	scanner *bufio.Scanner
 	token   []byte
